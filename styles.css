@@ -1,0 +1,121 @@
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #ff0000 ;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 40px;
+            background: grey;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+
+    .container p-5{
+      text-align: center;
+      
+    }
+    
+    .form-horizontal{
+      padding-top: 250px;
+    }
+    
+    
+    #Adding_button{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    body{
+      background-image: url('download.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    #text{
+      text-align: center;
+      color: white;
+      
+    }
+    
+    .table table-striped{
+      margin-left:auto; 
+      margin-right:auto;
+    }
+    
+    table#table{
+      text-align:center;
+      padding-top: 100px;
+      background-color: white;
+      margin-left:auto; 
+      margin-right:auto;
+    }
+    
+    h2{
+      color:white;
+      text-align:center;
+      margin-left:auto; 
+      margin-right:auto;
+    }
+    
+        
+    h1{
+      color:white;
+      text-align:center;
+      margin-left:auto; 
+      margin-right:auto;
+      font-size:40px;
+    }
+    
+        
+    p{
+      color:white;
+      text-align:center;
+      margin-left:auto; 
+      margin-right:auto;
+      font-size:20px
+    }
+    
+    #intro{
+      color:white;
+      margin-left:auto; 
+      margin-right:auto;
+      font-size:20px
+    }
+    
+    #a{
+      color:white;
+      margin-left:auto; 
+      margin-right:auto;
+    }
+    
+    iframe{
+            margin-left:auto; 
+      margin-right:auto;
+    }
