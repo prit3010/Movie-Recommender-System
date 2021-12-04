@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Top Movies
+{% endblock %}
+{% block main %}
+    <h2>Here are your Top {{number}} movies!</h2>
+    <table class="table table-striped" id="table">
+      <thead>
+          <tr>
+            <th style="text-align:center">Title</th>
+            <th style="text-align:center">Release Date</th>
+            <th style="text-align:center">Vote Count</th>
+            <th style="text-align:center">Vote Average</th>
+            <th style="text-align:center">Overview</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for row in rows %}
+              <tr>
+                  <td>{{row["title"]}}</td> 
+                  <td>{{row["release_date"]}}</td>
+                  <td>{{row["vote_count"]}}</td>
+                  <td>{{row["vote_average"]}}</td>
+                  <td>{{row["overview"]}}</td>
+              </tr>
+         {% endfor %}
+         
+      </tbody>
+        </table>    
+{% endblock %}    

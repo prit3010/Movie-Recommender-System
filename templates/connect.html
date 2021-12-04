@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Connect with People
+{% endblock %}
+{% block main %}
+        <form class="form-horizontal"action="/connect" method="post">
+            <h2>You can write any comment or review for a movie and other users will be able to read those reviews. Please be mindful that each person has their own opinions and please do not use any curse words. Have fun!</h2>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="connect" placeholder="Write here" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Post</button>
+    </form>
+    
+{% endblock %}

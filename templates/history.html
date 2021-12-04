@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   History
+{% endblock %}
+{% block main %}
+    <h2>Below is your watchedlist. Now go find more movies to watch !!</h2>
+    <table class="table table-striped" id="table">
+      <thead>
+          <tr>
+            <th style="text-align:center">Movie</th>
+            <th style="text-align:center">Rating</th>
+            <th style="text-align:center">Time Watched</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for row in rows %}
+              <tr>
+                  <td>{{row["movie"]}}</td> 
+                  <td>{{row["rating"]}}</td>
+                  <td>{{row["watched_time"]}}</td>
+              </tr>
+         {% endfor %}
+         
+      </tbody>
+        </table>    
+{% endblock %}

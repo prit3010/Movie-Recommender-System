@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Welcome
+{% endblock %}
+{% block main %}
+    <h1>Welcome to the RECOMMENDER</h1>
+    <p>This is a small website that can help you keep track of what movies you have watched, recommend you more movies and even allows you to interact with other like minded movie enthusiasts!</p>
+    <p>Heres a small guide as to how to use this website:</p>
+    <ul id="intro">
+      <li>Movies watched so far is your watchedlist. Go there to review what you have watched before</li>
+      <li>Top Movies is where you can find out the Top Charted Movies</li>
+      <li>Connect with more People is where you can add your own reviews and posts and talk to all the users in the community</li>
+      <li>Add Movies is where you go after watching your movies to input them into your watched list</li>
+    </ul>
+    <iframe src="https://giphy.com/embed/fxfCE6BRHjauk0IYGu" width="480" height="307" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <iframe src="https://giphy.com/embed/oenruB2DKC7p6" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <h2>This is our SOCIAL MEDIA corner. Read other users reviews and comments. Interact with users and dont forget have fun!</h2>
+    <table class="table table-striped" id="table">
+      <thead>
+          <tr>
+            <th style="text-align:center">Username</th>
+            <th style="text-align:center">Post</th>
+            <th style="text-align:center">Time posted</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for row in rows %}
+              <tr>
+                  <td>{{row["username"]}}</td> 
+                  <td>{{row["post"]}}</td>
+                  <td>{{row["time"]}}</td>
+              </tr>
+         {% endfor %}
+         
+      </tbody>
+        </table>    
+{% endblock %}

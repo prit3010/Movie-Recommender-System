@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Top Movies
+{% endblock %}
+{% block main %}
+        
+        <form class="form-horizontal" action="/top" method="post">
+            <h2>This recommender will churn out the top movies that has ever been made. Input the number of movies you want in your list of movies!! </h2>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="number" placeholder="Number" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Select</button>
+    </form>
+    
+{% endblock %}
